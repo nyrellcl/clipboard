@@ -1,0 +1,296 @@
+@import "./base/base";
+
+@import "./placeholders/placeholders";
+
+@import "./variables/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'); 
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .logo{
+        width: 1439px;
+        height: 363px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img{
+        width: 125px;
+        height: 125px;
+        margin: 4rem 0;
+    }
+    h1{
+        font-family: 'Bai Jamjuree', sans-serif;
+        width: 730px;
+        height: 58px;
+        text-align: center;
+        font-size: 2.875rem;
+    }
+    p{
+        font-family: 'Bai Jamjuree', sans-serif;
+        color: $grayish-blue;
+        width: 730px;
+        height: 60px;
+        text-align: center;
+        font-size: 1.25rem;
+        letter-spacing: 0.15px;
+        margin: 2rem;
+    }
+    
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 470px;
+    height: 56px;
+    button{
+        @extend %btn;
+        &:nth-child(1){
+            background-color: $strong-cyan;
+            box-shadow: inset 0px -3px #979797;
+        }
+        &:nth-child(2){
+            background-color: $light-blue;
+            box-shadow: inset 0px -3px #354dfff3;
+        }
+    }
+}
+
+.snippets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 730px;
+    height: 154px;
+    max-width: 100%;
+    margin: 8rem auto 3rem;
+    h2, p{
+        font-family: 'Bai Jamjuree', sans-serif;
+        text-align: center;
+    }
+    h2{
+        font-size: 2.25rem;
+    }
+    p{
+        width: 730px;
+        height: 64px;
+        line-height: 30px;
+        letter-spacing: 0.15px;
+        font-size: 1.125rem;
+        color: $grayish-blue;
+        margin: 2rem;
+    }
+}
+
+#capabilities{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1173px;
+    height: 572px;
+    img{
+        width: 713px;
+        height: 572px;
+    }
+    .cap-details-container{
+        width: 350px;
+        height: 406px;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        h3, p{
+            font-family: 'Bai Jamjuree', sans-serif;
+        }
+        h3{
+            font-size: 1.5rem;
+            width: 350px;
+            height: 30px;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            color: $grayish-blue;
+            letter-spacing: 0.12px;
+            line-height: 30px;
+        }
+    }
+}
+
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 730px;
+    height: 134px;
+    margin: 5rem auto;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    h2{
+        font-size: 2.25rem;
+        width: 730px;
+        height: 58px;
+        margin-bottom: 1.88rem;
+    }
+    p{
+        color: $grayish-blue;
+        width: 730px;
+        height: 60px;
+        line-height: 30px;
+        letter-spacing: 0.15px;
+    }
+}
+
+.devices{
+    width: 812px;
+    height: 475px;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 730px;
+    height: 94px;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+    h2{
+        font-size: 2.25rem;
+    }
+    p{
+        font-size: 1.125rem;
+        color: $grayish-blue;
+        letter-spacing: 0.15px;
+        line-height: 30px;
+        width: 730px;
+        height: 30px;
+        text-align: center;
+        margin: 2rem;
+    }
+}
+
+.workflow-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 216px;
+    margin: 3rem auto 4rem;
+    gap: 2rem;
+    div{
+        @extend %cards;
+        p{
+            color: $grayish-blue;
+        }
+    }
+}
+
+.companies{
+    width: 1110px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8rem auto;
+}
+
+.download-container{
+    width: 730px;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    h2{
+        font-size: 2.25rem;
+        width: 730px;
+        height: 45px;
+        margin-bottom: 1.188rem;
+    }
+    p{
+        color: $grayish-blue;
+        font-size: 1.125rem;
+        letter-spacing: 0.14px;
+        line-height: 30px;
+        margin: 0 auto 3rem;
+    }
+}
+
+.footer-container{
+    background-color: #bfcbd1;
+    width: 1440px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .inner-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 825px;
+        height: 72px;
+        margin: 2rem 0 2rem 15rem;
+        img{
+            width: 55px;
+            height: 55px;
+        }
+        .footer-nav-bar{
+            margin-left: 5rem;
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                font-family: 'Bai Jamjuree', sans-serif;
+                li{
+                    width: 160px;
+                    height: 30px;
+                    font-size: 1.125rem;
+                    a{
+                    color: #4C545C;
+                    transition: all 200ms ease-in-out;
+                    &:hover{
+                        cursor: pointer;
+                        color: $strong-cyan;
+                    }
+                    }
+                }
+            }
+            
+        }
+    }
+    .contact-logos{
+        display: flex;
+        justify-content: space-between;
+        height: 24px;
+        width: 120px;
+        align-items: center;
+        margin: 0 auto;
+        img{
+            width: 24px;
+            height: 24px;
+        &:hover, &:focus{
+            cursor: pointer;
+            color: $strong-cyan;
+        }
+    }
+    }
+}
+
+//Mobile design
+@import "./mobile/mobile";

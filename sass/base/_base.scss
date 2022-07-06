@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.banner{
+    background-image: url("/assets/images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
