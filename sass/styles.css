@@ -806,6 +806,7 @@ ul {
     height: auto;
     margin: 2rem auto;
     gap: 1rem;
+    width: 100%;
   }
   .snippets {
     width: 100%;
